@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio2.css">
+    <title>Guia</title>
+</head>
+
+<body>
+    <h1>Ficha Médica</h1>
+
+    <form action="/processar" method="POST">
+
+        <p class="nome">
+            <label for="nome"><strong>Nome</strong></label>
+            <br>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p class="data">
+            <label for="data"><strong>Data de nascimento</strong></label>
+            <br>
+            <input type="date" id="data" name="data" required>
+        </p>
+
+        <p class="sangue">
+            <label for="tipo"><strong>Tipo sanguíneo</strong></label>
+            <br>
+            <input type="text" name="sangue" id="sangue" required>
+        </p>
+
+        <p class="convenio"><strong>Tem algum convênio?</strong>
+            <br>
+            <label for="conv-sim">Sim</label>
+            <input type="radio" id="conv-sim" name="convenio" required>
+            <br>
+            <label for="conv-nao">Não</label>
+            <input type="radio" id="conv-nao" name="convenio" required>
+            <br>
+            <label for="qual-alergia">Se sim, Qual?</label>
+            <input type="text" name="qual_alergia" id="qual-alergia" required>
+        </p>
+
+        <p class="fumante"><strong>É Fumante?</strong>
+            <br>
+            <label for="fum-sim">Sim</label>
+            <input type="radio" id="fum-sim" name="fumante" required>
+            <br>
+            <label for="fum-nao">Não</label>
+            <input type="radio" id="fum-nao" name="fumante" required>
+        </p>
+
+        <p class="alergia">
+            <strong>Tem alguma alergia?</strong>
+            <br>
+            <label for="ale-sim">Sim</label>
+            <input type="radio" id="ale-sim" name="alergia" required>
+            <br>
+            <label for="ale-nao">Não</label>
+            <input type="radio" id="ale-nao" name="alergia" required>
+            <br>
+            <label for="qual-alergia">Se sim, Qual?</label>
+            <input type="text" name="qual_alergia" id="qual-alergia" required>
+        </p>
+
+        <p class="medicamento">
+            <strong>Toma algum medicamento?</strong>
+            <br>
+            <label for="tam-sim">Sim</label>
+            <input type="radio" id="tam-sim" name="medicamento" required>
+            <br>
+            <label for="tam-nao">Não</label>
+            <input type="radio" id="tam-nao" name="medicamento" required>
+            <br>
+            <label for="qual-med">Se sim, Qual?</label>
+            <input type="text" name="qual_medicamento" id="qual-med" required>
+        </p>
+
+        <p class="bebida">
+            <strong>Consome bebida alcoólica?</strong>
+            <br>
+            <label for="cba-sim">Sim</label>
+            <input type="radio" id="cba-sim" name="bebida" required>
+            <br>
+            <label for="cba-nao">Não</label>
+            <input type="radio" id="cba-nao" name="bebida" required>
+        </p>
+
+        <p class="telefone">
+            <label for="ctt"><strong>Telefone</strong></label>
+            <br>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <br><button type="button" class="enviar">Enviar Formulário</button>
+
+    </form>
+</body>
+
+</html>

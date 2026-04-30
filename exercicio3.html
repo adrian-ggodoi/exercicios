@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio3.css">
+    <title>Guia</title>
+</head>
+
+<body>
+    <h1>Inscrição ENEM / PROUNI</h1>
+
+    <form action="/processar" method="POST">
+
+        <p class="nome">
+            <label for="nome"><strong>Nome</strong></label>
+            <br>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p class="data">
+            <label for="data"><strong>Data de nascimento</strong></label>
+            <br>
+            <input type="date" id="data" name="data" required>
+        </p>
+
+        <p class="cpf">
+            <label for="cpf"><strong>CPF</strong></label>
+            <br>
+            <input type="text" id="cpf" name="cpf" required>
+        </p>
+
+        <p class="rg">
+            <label for="rg"><strong>RG</strong></label>
+            <br>
+            <input type="text" id="rg" name="rg" required>
+        </p>
+
+        <p class="endereco">
+            <label for="endereco"><strong>Endereço</strong></label><br>
+            <input type="text" id="endereco" name="endereco" required>
+        </p>
+
+        <p class="email">
+            <label for="email"><strong>E-Mail</strong></label>
+            <br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        
+        <p class="telefone">
+            <label for="ctt"><strong>Telefone</strong></label>
+            <br>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <br><button type="button" class="enviar">Enviar Formulário</button>
+
+    </form>
+</body>
+
+</html>
